@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source '/mnt/sdb1/SteamLibrary/steamapps/common/Geometry Dash/.log-scripts/.functions.sh'
+source '/mnt/sdb1/SteamLibrary/steamapps/common/Geometry Dash/.glial/.functions.sh'
 
 
 this_pid=$$

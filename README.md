@@ -34,12 +34,12 @@ You can integrate scripts into VS Code nicely by adding keybinds like these to y
 {
     "key": "numpad5",
     "command": "workbench.action.terminal.sendSequence",
-    "args": { "text": "'/mnt/sdb1/SteamLibrary/steamapps/common/Geometry Dash/.log-scripts/start-integrated.sh'\u000D" }
+    "args": { "text": "'/mnt/sdb1/SteamLibrary/steamapps/common/Geometry Dash/.glial/start-integrated.sh'\u000D" }
 },
 {
     "key": "numpad8",
     "command": "workbench.action.terminal.sendSequence",
-    "args": { "text": "'/mnt/sdb1/SteamLibrary/steamapps/common/Geometry Dash/.log-scripts/attach-log.sh'\u000D" }
+    "args": { "text": "'/mnt/sdb1/SteamLibrary/steamapps/common/Geometry Dash/.glial/attach-log.sh'\u000D" }
 }
 ```
 Replace keybinds/paths accordingly. `\u000D` is Unicode for `Enter`, which automatically sends the command.
@@ -57,7 +57,7 @@ With the help of the extension you can extend these keybinds to focus your termi
             {
                 "command": "workbench.action.terminal.sendSequence",
                 "args": {
-                    "text": "'/mnt/sdb1/SteamLibrary/steamapps/common/Geometry Dash/.log-scripts/start-integrated.sh'\u000D"
+                    "text": "'/mnt/sdb1/SteamLibrary/steamapps/common/Geometry Dash/.glial/start-integrated.sh'\u000D"
                 }
             }
         ]
@@ -72,7 +72,7 @@ With the help of the extension you can extend these keybinds to focus your termi
             {
                 "command": "workbench.action.terminal.sendSequence",
                 "args": {
-                    "text": "'/mnt/sdb1/SteamLibrary/steamapps/common/Geometry Dash/.log-scripts/attach-log.sh'\u000D"
+                    "text": "'/mnt/sdb1/SteamLibrary/steamapps/common/Geometry Dash/.glial/attach-log.sh'\u000D"
                 }
             }
         ]
