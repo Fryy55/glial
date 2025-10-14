@@ -23,7 +23,7 @@ Clone the repo somewhere or download scripts from [releases](https://github.com/
 > [!IMPORTANT]
 > You need to edit some of the scripts before you can work with GLIAL.
 > Open `.functions.sh` with your preferred text editor and replace the `logs_dir` directory with Geode's logs directory on your machine.
-> Next, replace the target file for the `source` command in `start-integrated.sh` and `attach-log.sh` with the _absolute_ path to `.functions.sh` in your configuration.
+> Keep in mind, that for GLIAL to work _all scripts must be in the same directory_!
 
 # Usage
 Run the `start-integrated.sh` script for starting GD attached to the terminal or run `attach-log.sh` to attach to an already running instance of GD. If no instances exist, `attach-log.sh` will quit instantly.

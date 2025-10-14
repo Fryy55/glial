@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source '/mnt/sdb1/SteamLibrary/steamapps/common/Geometry Dash/.glial/.functions.sh'
+source "$(dirname "$(readlink -f "$0")")/.functions.sh"
 
 
 this_pid=$$
