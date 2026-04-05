@@ -4,6 +4,9 @@ Pretty much just this ^
 > [!TIP]
 > These scripts use _log files_ for providing logs, so make sure to set your log level to `DEBUG` for files in Geode's settings for detailed logs!
 
+> [!NOTE]
+> Due to 2 main scripts often not handling exit correctly, a new script was introduced in v1.1.0 - `basic-tail.sh`, which simply `tail`s the latest log without any GD dependencies. It's recommended to use it instead of main scripts in case you're running into inotify limits
+
 # Features
 - Color support
 - Scripts to open GD _tied to the terminal process_ or _attach to GD arbitrarily_, **without** affecting the process itself (meaning you can terminate/reattach the log whenever you want)
@@ -22,7 +25,8 @@ Clone the repo somewhere or download scripts from [releases](https://github.com/
 
 > [!IMPORTANT]
 > You need to edit some of the scripts before you can work with GLIAL.
-> Open `.functions.sh` with your preferred text editor and replace the `logs_dir` directory with Geode's logs directory on your machine.
+> Open `config.cfg` with your preferred text editor and replace the `logs_dir` directory with Geode's logs directory on your machine.
+>
 > Keep in mind, that for GLIAL to work _all scripts must be in the same directory_!
 
 # Usage
